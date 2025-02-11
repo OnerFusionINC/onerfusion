@@ -20,10 +20,10 @@ $MESSAGE_BODY .= "Comment: ".nl2br($_POST["userMsg"])."<br/>". "\r\n";
 $sendEmail = mail($ToEmail, $EmailSubject, $MESSAGE_BODY, $mailheader); 
 
 if (!$sendEmail) {
-	header('Location:http://onerfusion.com/contact.php?form=failure');	
+	header('Location:http://onerfusion.com/contact.html?form=failure');	
 }
 
-header('Location:http://onerfusion.com/contact.php?form=success');
+header('Location:http://onerfusion.com/contact.html?form=success');
 
 }
 ?>
